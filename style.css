@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #121212; color: white; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+h1 { text-align: center; color: #ff6b6b; margin-bottom: 30px; }
+.search-section { display: flex; gap: 10px; margin-bottom: 30px; }
+#searchInput { flex: 1; padding: 15px; border: none; border-radius: 25px; background: #2d2d2d; color: white; font-size: 16px; }
+button { padding: 15px 30px; background: #ff6b6b; border: none; border-radius: 25px; color: white; cursor: pointer; font-weight: bold; }
+
+.results-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+.video-card { background: #1e1e1e; border-radius: 15px; padding: 15px; cursor: pointer; transition: transform 0.3s; }
+.video-card:hover { transform: translateY(-5px); }
+.video-card img { width: 100%; height: 300px; object-fit: cover; border-radius: 10px; }
+.video-card h4 { margin: 10px 0 5px; color: #ff6b6b; }
+
+.player-section { background: #1a1a1a; border-radius: 20px; padding: 30px; margin-bottom: 30px; }
+.video-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+.back-btn { background: #666; padding: 10px 20px; border-radius: 20px; text-decoration: none; color: white; }
+.video-container { background: #000; border-radius: 15px; padding: 20px; margin-bottom: 20px; }
+.episodes-list { background: #2d2d2d; padding: 20px; border-radius: 15px; }
+.episode-item { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid #444; cursor: pointer; }
+.episode-item:last-child { border-bottom: none; }
+.episode-item:hover { background: #ff6b6b20; }
